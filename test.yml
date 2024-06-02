@@ -1,0 +1,14 @@
+---
+- name: Testing andrewrothstein.ollama role
+  hosts: all
+  tasks:
+    - name: Installing andrewrothstein.ollama
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+#    - name: Executing 'ollama --version'
+#      ansible.builtin.command: ollama --version
+#      changed_when: false
+#      register: 'ollama_test_output'
+#    - name: Output from 'ollama --version'
+#      ansible.builtin.debug:
+#        msg: '{{ ollama_test_output.stdout }}'
