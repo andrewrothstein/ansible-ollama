@@ -9,14 +9,47 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: Downloading {{ ollama_url }} to {{ ollama_exe }}
+- name: Look for install at {{ ollama_exe }}
   become: true
-  become_user: root
-  ansible.builtin.get_url:
-    url: '{{ ollama_url }}'
-    dest: '{{ ollama_exe }}'
-    checksum: '{{ ollama_checksum }}'
-    mode: '755'
+  ansible.builtin.stat:
+    path: '{{ ollama_exe }}'
+  register: ollama_binary
+- name: Downloading and installing ollama
+  when: not ollama_binary.stat.exists
+  block:
+    - name: Downloading {{ ollama_url }} to {{ ollama_tmp_tgz }}
+      become: true
+      become_user: root
+      ansible.builtin.get_url:
+        url: '{{ ollama_url }}'
+        dest: '{{ ollama_tmp_tgz }}'
+        checksum: '{{ ollama_checksum }}'
+        mode: '644'
+    - name: Mkdir {{ ollama_install_dir }}
+      become: true
+      become_user: root
+      ansible.builtin.file:
+        path: '{{ ollama_install_dir }}'
+        state: directory
+        mode: '755'
+    - name: Installing andrewrothstein.unarchivedeps
+      ansible.builtin.include_role:
+        name: andrewrothstein.unarchivedeps
+    - name: Unarchiving {{ ollama_tmp_tgz }} to {{ ollama_install_dir }}
+      become: true
+      become_user: root
+      ansible.builtin.unarchive:
+        remote_src: true
+        src: '{{ ollama_tmp_tgz }}'
+        dest: '{{ ollama_install_dir }}'
+        creates: '{{ ollama_exe }}'
+  always:
+    - name: Rm -f {{ ollama_tmp_tgz }}
+      become: true
+      become_user: root
+      ansible.builtin.file:
+        path: '{{ ollama_tmp_tgz }}'
+        state: absent
 - name: Linking {{ ollama_link }} to {{ ollama_exe }}
   become: true
   become_user: root
