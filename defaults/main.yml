@@ -1,6 +1,6 @@
 ---
 # defaults file for ollama
-ollama_ver: 0.4.6
+ollama_ver: 0.5.0
 ollama_mirror: https://github.com/ollama/ollama/releases/download
 ollama_arch_map:
   aarch64: arm64
@@ -73,3 +73,9 @@ ollama_checksums:
     linux-amd64: sha256:1866b7fc11ee301dc3e488dc7d7631bd79e0e2a188919d7cdd1a02515087a672
     # https://github.com/ollama/ollama/releases/download/v0.4.6/ollama-linux-arm64.tgz
     linux-arm64: sha256:77993eb8d6c1212f0fe0b029103385533b81b1fc7afb1d9f9cc4929d5ddaba1b
+  # https://github.com/ollama/ollama/releases/download/v0.5.0/sha256sum.txt
+  '0.5.0':
+    # https://github.com/ollama/ollama/releases/download/v0.5.0/ollama-linux-amd64.tgz
+    linux-amd64: sha256:65e56a0ace828263bf256d06780541048ded296f489f219b34035f0f0e10e3d4
+    # https://github.com/ollama/ollama/releases/download/v0.5.0/ollama-linux-arm64.tgz
+    linux-arm64: sha256:eff009961e1e6e25f85b25391bf8b2fac8265312df6227cd5beed94f3c1111ea
