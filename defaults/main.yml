@@ -1,6 +1,6 @@
 ---
 # defaults file for ollama
-ollama_ver: 0.6.5
+ollama_ver: 0.11.4
 ollama_mirror: https://github.com/ollama/ollama/releases/download
 ollama_arch_map:
   aarch64: arm64
@@ -8,152 +8,332 @@ ollama_arch_map:
 ollama_parent_install_dir: /usr/local
 ollama_checksums:
   # https://github.com/ollama/ollama/releases/download/v0.3.7/sha256sum.txt
-  '0.3.7':
+  "0.3.7":
     # https://github.com/ollama/ollama/releases/download/v0.3.7/ollama-linux-amd64.tgz
     linux-amd64: sha256:4609dbde9a3242e2170f93aae9c1c0b35e424b24566ae0bb9f54f4082d832c0e
     # https://github.com/ollama/ollama/releases/download/v0.3.7/ollama-linux-arm64.tgz
     linux-arm64: sha256:5dd1dd0597e050895b61150f4964ddf3fc152d73d57a5e7203a166fddc42b1b8
   # https://github.com/ollama/ollama/releases/download/v0.3.8/sha256sum.txt
-  '0.3.8':
+  "0.3.8":
     # https://github.com/ollama/ollama/releases/download/v0.3.8/ollama-linux-amd64.tgz
     linux-amd64: sha256:8e44f1ff4daad518eaf14bddc1ce98f6aaf2e26f55cab586360e586244e5a56d
     # https://github.com/ollama/ollama/releases/download/v0.3.8/ollama-linux-arm64.tgz
     linux-arm64: sha256:9ad3b1283f1dd549f6aee62627c5c565fb55d183b95127a9f2757631b488d6ff
   # https://github.com/ollama/ollama/releases/download/v0.3.9/sha256sum.txt
-  '0.3.9':
+  "0.3.9":
     # https://github.com/ollama/ollama/releases/download/v0.3.9/ollama-linux-amd64.tgz
     linux-amd64: sha256:b0062fbccd46134818d9d59cfa3867ad6849163653cb1171bc852c5f379b0851
     # https://github.com/ollama/ollama/releases/download/v0.3.9/ollama-linux-arm64.tgz
     linux-arm64: sha256:8979484bcb1448ab9b45107fbcb3b9f43c2af46f961487449b9ebf3518cd70eb
   # https://github.com/ollama/ollama/releases/download/v0.3.10/sha256sum.txt
-  '0.3.10':
+  "0.3.10":
     # https://github.com/ollama/ollama/releases/download/v0.3.10/ollama-linux-amd64.tgz
     linux-amd64: sha256:b2a064df16952e3a908837095b3f9e5e279400a3a2aae054c3382783e51c9db7
     # https://github.com/ollama/ollama/releases/download/v0.3.10/ollama-linux-arm64.tgz
     linux-arm64: sha256:c51c80e84347c46958401954628306e27757e4658641aab897fe6c3086614999
   # https://github.com/ollama/ollama/releases/download/v0.3.11/sha256sum.txt
-  '0.3.11':
+  "0.3.11":
     # https://github.com/ollama/ollama/releases/download/v0.3.11/ollama-linux-amd64.tgz
     linux-amd64: sha256:aa4d26889a6a413f676a7f80116983731f06287534bb72adec37dd39d168d40a
     # https://github.com/ollama/ollama/releases/download/v0.3.11/ollama-linux-arm64.tgz
     linux-arm64: sha256:61e3a21bec7f706b404424b80602240281d9b651ca4e00e8edee4527a533a15b
   # https://github.com/ollama/ollama/releases/download/v0.3.12/sha256sum.txt
-  '0.3.12':
+  "0.3.12":
     # https://github.com/ollama/ollama/releases/download/v0.3.12/ollama-linux-amd64.tgz
     linux-amd64: sha256:f0efa42f7ad77cd156bd48c40cd22109473801e5113173b0ad04f094a4ef522b
     # https://github.com/ollama/ollama/releases/download/v0.3.12/ollama-linux-arm64.tgz
     linux-arm64: sha256:da631cbe4dd2c168dae58d6868b1ff60e881e050f2d07578f2f736e689fec04c
   # https://github.com/ollama/ollama/releases/download/v0.3.13/sha256sum.txt
-  '0.3.13':
+  "0.3.13":
     # https://github.com/ollama/ollama/releases/download/v0.3.13/ollama-linux-amd64.tgz
     linux-amd64: sha256:19d8b87864d7d56d3bcf61b98e6a20bd68744037aba7515803f317dfdad62984
     # https://github.com/ollama/ollama/releases/download/v0.3.13/ollama-linux-arm64.tgz
     linux-arm64: sha256:28cd33e4dd0cdb956272119839a349f7fc45ddd5b97978e2b19fc5804150d721
   # https://github.com/ollama/ollama/releases/download/v0.3.14/sha256sum.txt
-  '0.3.14':
+  "0.3.14":
     # https://github.com/ollama/ollama/releases/download/v0.3.14/ollama-linux-amd64.tgz
     linux-amd64: sha256:8b746572392b6a6912bedfb5ac8115c18b77815ea4614c6cce7ccb6f67b9d929
     # https://github.com/ollama/ollama/releases/download/v0.3.14/ollama-linux-arm64.tgz
     linux-arm64: sha256:7e6f654717ba529e148c2f72a153761122a8ea464a60f4bc8ccc278544ac81fd
   # https://github.com/ollama/ollama/releases/download/v0.4.1/sha256sum.txt
-  '0.4.1':
+  "0.4.1":
     # https://github.com/ollama/ollama/releases/download/v0.4.1/ollama-linux-amd64.tgz
     linux-amd64: sha256:2e0d76de892db7f4fb5095ce904222dcc81032a78d84432ceebe9814c5f379fb
     # https://github.com/ollama/ollama/releases/download/v0.4.1/ollama-linux-arm64.tgz
     linux-arm64: sha256:03dbb2a650b7e39ceb70626e06f80946f9c3b32e3f800e23edd30c7485dfcbbd
   # https://github.com/ollama/ollama/releases/download/v0.4.4/sha256sum.txt
-  '0.4.4':
+  "0.4.4":
     # https://github.com/ollama/ollama/releases/download/v0.4.4/ollama-linux-amd64.tgz
     linux-amd64: sha256:c9d5966db56dd7d248085d30ee9d97ca15b0de3dfa65d0d120100b4ed0176ebe
     # https://github.com/ollama/ollama/releases/download/v0.4.4/ollama-linux-arm64.tgz
     linux-arm64: sha256:43098c2f6e891168df3f6ddd5a3c54de576f3011260b425089e9066cbd1b9e21
   # https://github.com/ollama/ollama/releases/download/v0.4.6/sha256sum.txt
-  '0.4.6':
+  "0.4.6":
     # https://github.com/ollama/ollama/releases/download/v0.4.6/ollama-linux-amd64.tgz
     linux-amd64: sha256:1866b7fc11ee301dc3e488dc7d7631bd79e0e2a188919d7cdd1a02515087a672
     # https://github.com/ollama/ollama/releases/download/v0.4.6/ollama-linux-arm64.tgz
     linux-arm64: sha256:77993eb8d6c1212f0fe0b029103385533b81b1fc7afb1d9f9cc4929d5ddaba1b
   # https://github.com/ollama/ollama/releases/download/v0.5.0/sha256sum.txt
-  '0.5.0':
+  "0.5.0":
     # https://github.com/ollama/ollama/releases/download/v0.5.0/ollama-linux-amd64.tgz
     linux-amd64: sha256:65e56a0ace828263bf256d06780541048ded296f489f219b34035f0f0e10e3d4
     # https://github.com/ollama/ollama/releases/download/v0.5.0/ollama-linux-arm64.tgz
     linux-arm64: sha256:eff009961e1e6e25f85b25391bf8b2fac8265312df6227cd5beed94f3c1111ea
   # https://github.com/ollama/ollama/releases/download/v0.5.1/sha256sum.txt
-  '0.5.1':
+  "0.5.1":
     # https://github.com/ollama/ollama/releases/download/v0.5.1/ollama-linux-amd64.tgz
     linux-amd64: sha256:ca5c806f658f71d9d8b46d51e80678f8d6a1937e1e19db689bde5e8331ead600
     # https://github.com/ollama/ollama/releases/download/v0.5.1/ollama-linux-arm64.tgz
     linux-arm64: sha256:4ffa5a62ea93ad6f19ba9429482e1c7481148123a3c72d248d8e1cc2cb9f656d
   # https://github.com/ollama/ollama/releases/download/v0.5.4/sha256sum.txt
-  '0.5.4':
+  "0.5.4":
     # https://github.com/ollama/ollama/releases/download/v0.5.4/ollama-linux-amd64.tgz
     linux-amd64: sha256:5f44dc7f21c4f0050c4da6649bf1501707e782b57a3f5e899e4fd0e2ffc183cb
     # https://github.com/ollama/ollama/releases/download/v0.5.4/ollama-linux-arm64.tgz
     linux-arm64: sha256:7ff1f8b2c08f5172b8e4646abdbdc3b6947f20ca7f0e9060bf07064241420d45
   # https://github.com/ollama/ollama/releases/download/v0.5.5/sha256sum.txt
-  '0.5.5':
+  "0.5.5":
     # https://github.com/ollama/ollama/releases/download/v0.5.5/ollama-linux-amd64.tgz
     linux-amd64: sha256:69e46628312ca6f59cf5b8103583a095dd09a2971988cf0b566df93afd8992d0
     # https://github.com/ollama/ollama/releases/download/v0.5.5/ollama-linux-arm64.tgz
     linux-arm64: sha256:fa6023bc3cefa6f04f059e03249385d13f13cee96411c86cd78583547275d166
   # https://github.com/ollama/ollama/releases/download/v0.5.7/sha256sum.txt
-  '0.5.7':
+  "0.5.7":
     # https://github.com/ollama/ollama/releases/download/v0.5.7/ollama-linux-amd64.tgz
     linux-amd64: sha256:8d4e054bc512d53115074c19de5a7915df78180f89c014abbae4497e4a813a3c
     # https://github.com/ollama/ollama/releases/download/v0.5.7/ollama-linux-arm64.tgz
     linux-arm64: sha256:21c124617dee9ab4423c055cdc6ef1b0c7c9416bff27775f49959cbb0ecd27b2
   # https://github.com/ollama/ollama/releases/download/v0.5.11/sha256sum.txt
-  '0.5.11':
+  "0.5.11":
     # https://github.com/ollama/ollama/releases/download/v0.5.11/ollama-linux-amd64.tgz
     linux-amd64: sha256:aa386ce1c314686133f7abe9b561f3ef230f03f88bbdd1f583c951c4ab5378ad
     # https://github.com/ollama/ollama/releases/download/v0.5.11/ollama-linux-arm64.tgz
     linux-arm64: sha256:e4d858d2aea008f45fc9a66f62480dafb322fcdb707c8fcf3361a0ee2af37e4a
   # https://github.com/ollama/ollama/releases/download/v0.5.12/sha256sum.txt
-  '0.5.12':
+  "0.5.12":
     # https://github.com/ollama/ollama/releases/download/v0.5.12/ollama-linux-amd64.tgz
     linux-amd64: sha256:3a0efab98585b37337485e8d22ebe769d82ec54499275c51fa6c98e0ad7fe573
     # https://github.com/ollama/ollama/releases/download/v0.5.12/ollama-linux-arm64.tgz
     linux-arm64: sha256:7043418b2cb7b605d63d7095dc8504a7100c9c39788c23ffa9ccdbb3c82cc9fe
   # https://github.com/ollama/ollama/releases/download/v0.5.13/sha256sum.txt
-  '0.5.13':
+  "0.5.13":
     # https://github.com/ollama/ollama/releases/download/v0.5.13/ollama-linux-amd64.tgz
     linux-amd64: sha256:30ec1cf2be608898c3b574c3805da66759406e59ad7db01a26719eaf7365c75a
     # https://github.com/ollama/ollama/releases/download/v0.5.13/ollama-linux-arm64.tgz
     linux-arm64: sha256:8a4feee77f78e078f132c474694969e240f3d02c6d14f28d744bd59daa95332c
   # https://github.com/ollama/ollama/releases/download/v0.6.0/sha256sum.txt
-  '0.6.0':
+  "0.6.0":
     # https://github.com/ollama/ollama/releases/download/v0.6.0/ollama-linux-amd64.tgz
     linux-amd64: sha256:ffac427e4bd6515a6abde784b15e5411b1d75bf6253702758c5165d26b0e0f02
     # https://github.com/ollama/ollama/releases/download/v0.6.0/ollama-linux-arm64.tgz
     linux-arm64: sha256:0d8c9bb35440963b0e2df4650cd1b2df85e2e4e220c3a1d791e01ddaf1589b3c
   # https://github.com/ollama/ollama/releases/download/v0.6.1/sha256sum.txt
-  '0.6.1':
+  "0.6.1":
     # https://github.com/ollama/ollama/releases/download/v0.6.1/ollama-linux-amd64.tgz
     linux-amd64: sha256:b17f2f8233f2c40b8391eb9f45331967221c76cef0506aeb93f4ae7be02afe9f
     # https://github.com/ollama/ollama/releases/download/v0.6.1/ollama-linux-arm64.tgz
     linux-arm64: sha256:d8389feec0965d914a9350ea89b09994583c1a081481c941989c30c51a8b6b05
   # https://github.com/ollama/ollama/releases/download/v0.6.2/sha256sum.txt
-  '0.6.2':
+  "0.6.2":
     # https://github.com/ollama/ollama/releases/download/v0.6.2/ollama-linux-amd64.tgz
     linux-amd64: sha256:d59967750335233d2c116acae63d7927f0b91409aba47eb8636d8f990ad46bd1
     # https://github.com/ollama/ollama/releases/download/v0.6.2/ollama-linux-arm64.tgz
     linux-arm64: sha256:e956f6bf58224729e487e71acc0059150105869ab117a412461f8ad59d9d9963
   # https://github.com/ollama/ollama/releases/download/v0.6.3/sha256sum.txt
-  '0.6.3':
+  "0.6.3":
     # https://github.com/ollama/ollama/releases/download/v0.6.3/ollama-linux-amd64.tgz
     linux-amd64: sha256:71ecbf2e968f87844eec3ab67b6e0b0b25fa282a801e4a8a8d45eec55f6dc08b
     # https://github.com/ollama/ollama/releases/download/v0.6.3/ollama-linux-arm64.tgz
     linux-arm64: sha256:f4ad8450772e4781920d4842c0a24ddd4a9437c566cdb5c8f78d1e95885fc792
   # https://github.com/ollama/ollama/releases/download/v0.6.4/sha256sum.txt
-  '0.6.4':
+  "0.6.4":
     # https://github.com/ollama/ollama/releases/download/v0.6.4/ollama-linux-amd64.tgz
     linux-amd64: sha256:739e099350a4d5fb3d7089772f4e18a09141770162b8357dfc24b12d556a571d
     # https://github.com/ollama/ollama/releases/download/v0.6.4/ollama-linux-arm64.tgz
     linux-arm64: sha256:333c78bcabf0e2f3e64b22249b76d9ec1dedb057f4dff0c6a991e73d9e8bd005
   # https://github.com/ollama/ollama/releases/download/v0.6.5/sha256sum.txt
-  '0.6.5':
+  "0.6.5":
     # https://github.com/ollama/ollama/releases/download/v0.6.5/ollama-linux-amd64.tgz
     linux-amd64: sha256:1d1aea4dcae1d6b736141c2998416a742b89d7fda9321d60db7ea286db77268d
     # https://github.com/ollama/ollama/releases/download/v0.6.5/ollama-linux-arm64.tgz
     linux-arm64: sha256:71db18b637d5f52067d0a83c3e6784d41bb7b14dcfc368af663f618d8ef320a5
+  # https://github.com/ollama/ollama/releases/download/v0.6.6/sha256sum.txt
+  "0.6.6":
+    # https://github.com/ollama/ollama/releases/download/v0.6.6/ollama-linux-amd64.tgz
+    linux-amd64: sha256:1b7685a69068899966778497b38c083c9584822f791f8c49cfec136912f1cf03
+    # https://github.com/ollama/ollama/releases/download/v0.6.6/ollama-linux-arm64.tgz
+    linux-arm64: sha256:7b96f918588d6fbe86d95dcbdb7912e8245f0199b3b82cb2b9929e17439be0cd
+  # https://github.com/ollama/ollama/releases/download/v0.6.7/sha256sum.txt
+  "0.6.7":
+    # https://github.com/ollama/ollama/releases/download/v0.6.7/ollama-linux-amd64.tgz
+    linux-amd64: sha256:42b6bc1237c6932d36694606bf3d56d99fbd03b570b6002364773e00f56fa4cf
+    # https://github.com/ollama/ollama/releases/download/v0.6.7/ollama-linux-arm64.tgz
+    linux-arm64: sha256:c1b87b14736f7e90cea34002adbaf0ec74a61f4069ca574e89fb3519b8455268
+  # https://github.com/ollama/ollama/releases/download/v0.6.8/sha256sum.txt
+  "0.6.8":
+    # https://github.com/ollama/ollama/releases/download/v0.6.8/ollama-linux-amd64.tgz
+    linux-amd64: sha256:9f9ff52b8297d6e40904f22bac09eac587a05111762bf278359621fbdb53dbb9
+    # https://github.com/ollama/ollama/releases/download/v0.6.8/ollama-linux-arm64.tgz
+    linux-arm64: sha256:cd5849a12c20ab5e363f57a09ceabd2c388f1bd71391a1336033fd067da51788
+  # https://github.com/ollama/ollama/releases/download/v0.7.0/sha256sum.txt
+  "0.7.0":
+    # https://github.com/ollama/ollama/releases/download/v0.7.0/ollama-linux-amd64.tgz
+    linux-amd64: sha256:e9f8789105e7fce5b9d95fffa8ba8f7c44d92c133f9a486e75d77e5236ee4eb1
+    # https://github.com/ollama/ollama/releases/download/v0.7.0/ollama-linux-arm64.tgz
+    linux-arm64: sha256:448084347c40085cb1384877f0d00b2989403bff2590ec1dee3aa4b5002c028c
+  # https://github.com/ollama/ollama/releases/download/v0.7.1/sha256sum.txt
+  "0.7.1":
+    # https://github.com/ollama/ollama/releases/download/v0.7.1/ollama-linux-amd64.tgz
+    linux-amd64: sha256:7648707e5e78a4f5aeef3177e0e4bdbf59ff3c2499cb5553d648defaf39c8ea4
+    # https://github.com/ollama/ollama/releases/download/v0.7.1/ollama-linux-arm64.tgz
+    linux-arm64: sha256:2dda5456268ddbf14efc2a47e739540fa2447b5336fe3f2c4f5447a5c780ac1e
+  # https://github.com/ollama/ollama/releases/download/v0.8.0/sha256sum.txt
+  "0.8.0":
+    # https://github.com/ollama/ollama/releases/download/v0.8.0/ollama-linux-amd64.tgz
+    linux-amd64: sha256:a0b6d2a8f172fd2c046287efdc1b249cd4ec7498dedd86eeefa2118b88fed985
+    # https://github.com/ollama/ollama/releases/download/v0.8.0/ollama-linux-arm64.tgz
+    linux-arm64: sha256:63b497cc10ed0b111b1aec1114b1a9ee92c61bc1cb77fb84209febb910c583d5
+  # https://github.com/ollama/ollama/releases/download/v0.9.0/sha256sum.txt
+  "0.9.0":
+    # https://github.com/ollama/ollama/releases/download/v0.9.0/ollama-linux-amd64.tgz
+    linux-amd64: sha256:ae9cebd61552d6cf3c527cb88e3a4865a25f22950aa8bb5328887ffd96cfd22a
+    # https://github.com/ollama/ollama/releases/download/v0.9.0/ollama-linux-arm64.tgz
+    linux-arm64: sha256:288b6f7ed9175476943c0c01f21df1de21df590b0b3ed5dee16a5285d5da84e4
+  # https://github.com/ollama/ollama/releases/download/v0.9.1/sha256sum.txt
+  "0.9.1":
+    # https://github.com/ollama/ollama/releases/download/v0.9.1/ollama-linux-amd64.tgz
+    linux-amd64: sha256:ef2aba89fc7a94f6b6c5e30227eacbd0fac29504733cd6fb3478a93336c70dbc
+    # https://github.com/ollama/ollama/releases/download/v0.9.1/ollama-linux-arm64.tgz
+    linux-arm64: sha256:2a50582d171a7de82dba478fc68459730e884b935dd8eed6cf8e1e027c84782e
+  # https://github.com/ollama/ollama/releases/download/v0.9.2/sha256sum.txt
+  "0.9.2":
+    # https://github.com/ollama/ollama/releases/download/v0.9.2/ollama-linux-amd64.tgz
+    linux-amd64: sha256:2f652de76cf341ecab6975d11ea0d311a970c877f108a434507497e2c5655009
+    # https://github.com/ollama/ollama/releases/download/v0.9.2/ollama-linux-arm64.tgz
+    linux-arm64: sha256:146d65ae0009a69f6283ae9c4679f81466c1b01beb10423b6fefda0ed1847e8e
+  # https://github.com/ollama/ollama/releases/download/v0.9.3/sha256sum.txt
+  "0.9.3":
+    # https://github.com/ollama/ollama/releases/download/v0.9.3/ollama-linux-amd64.tgz
+    linux-amd64: sha256:088bad1aa52873214a8875727b433204ee7d2b4fc79f288fcf03297fd2bf7211
+    # https://github.com/ollama/ollama/releases/download/v0.9.3/ollama-linux-arm64.tgz
+    linux-arm64: sha256:2dd428c33185a953d25ed70e55365c618637524ba4f1b127457c9e111fb87c12
+  # https://github.com/ollama/ollama/releases/download/v0.9.4/sha256sum.txt
+  "0.9.4":
+    # https://github.com/ollama/ollama/releases/download/v0.9.4/ollama-linux-amd64.tgz
+    linux-amd64: sha256:d9e451317cb324c17280de30ab93cd22a5be23ba07b02481cd413f850af37ac0
+    # https://github.com/ollama/ollama/releases/download/v0.9.4/ollama-linux-arm64.tgz
+    linux-arm64: sha256:cb590942f64dfa692928ccb11832d4a08d8ff82ad9faeeaf255b2539386bd7d6
+  # https://github.com/ollama/ollama/releases/download/v0.9.5/sha256sum.txt
+  "0.9.5":
+    # https://github.com/ollama/ollama/releases/download/v0.9.5/ollama-linux-amd64.tgz
+    linux-amd64: sha256:c962c3cab36c687ea528fc6af630931aa0a7e78777061ed08085c3848bab1db4
+    # https://github.com/ollama/ollama/releases/download/v0.9.5/ollama-linux-arm64.tgz
+    linux-arm64: sha256:e1723938edeaac8f4437ed47a9161df24ded40d0cfe4c00e689a453b54ee4a2c
+  # https://github.com/ollama/ollama/releases/download/v0.9.6/sha256sum.txt
+  "0.9.6":
+    # https://github.com/ollama/ollama/releases/download/v0.9.6/ollama-linux-amd64.tgz
+    linux-amd64: sha256:e6cf44273391ad14835e556627a77f0e80bd18f3cdddca38ef5be215710e1871
+    # https://github.com/ollama/ollama/releases/download/v0.9.6/ollama-linux-arm64.tgz
+    linux-arm64: sha256:0b54918f92636c8e05532c4292e20b2ead3d5bc14913f713accfbad5ac5e722c
+  # https://github.com/ollama/ollama/releases/download/v0.10.0/sha256sum.txt
+  "0.10.0":
+    # https://github.com/ollama/ollama/releases/download/v0.10.0/ollama-linux-amd64.tgz
+    linux-amd64: sha256:6bfe6b5eea83848a2af163ed36b4d0031c20d36463ef230bfa19313a56dfcfcc
+    # https://github.com/ollama/ollama/releases/download/v0.10.0/ollama-linux-arm64.tgz
+    linux-arm64: sha256:c43713794fb54ded923c095ed7e63a463f337caeb505d4794b180288476b22f3
+  # https://github.com/ollama/ollama/releases/download/v0.10.1/sha256sum.txt
+  "0.10.1":
+    # https://github.com/ollama/ollama/releases/download/v0.10.1/ollama-linux-amd64.tgz
+    linux-amd64: sha256:e65d65a7f2b471bdb4d213cc3ce304de992c36c39458d5303648318a92f4d4af
+    # https://github.com/ollama/ollama/releases/download/v0.10.1/ollama-linux-arm64.tgz
+    linux-arm64: sha256:d81b2889865999db1203ad5597def876b796dffbd382ba6f62f0e89fb95b2456
+  # https://github.com/ollama/ollama/releases/download/v0.11.0/sha256sum.txt
+  "0.11.0":
+    # https://github.com/ollama/ollama/releases/download/v0.11.0/ollama-linux-amd64.tgz
+    linux-amd64: sha256:6627e9898ab0e7924e4bdda05a7c41c66eaa23404ef237ae952c1ae2c86129de
+    # https://github.com/ollama/ollama/releases/download/v0.11.0/ollama-linux-arm64.tgz
+    linux-arm64: sha256:2b271bf318924cccb281f31cf06b1f8f723c5a2d146c629d83a4b35822c480de
+  # https://github.com/ollama/ollama/releases/download/v0.11.2/sha256sum.txt
+  "0.11.2":
+    # https://github.com/ollama/ollama/releases/download/v0.11.2/ollama-linux-amd64.tgz
+    linux-amd64: sha256:8fc97cb9b91f116f234d7db1aba77a0f38e9b62879dc161fa825eb4b2ef9b859
+    # https://github.com/ollama/ollama/releases/download/v0.11.2/ollama-linux-arm64.tgz
+    linux-arm64: sha256:e317418b6a3aa0f5814d38c7ed8d500f5ac90b8cdd72569d9286159a5a3f24e8
+  # https://github.com/ollama/ollama/releases/download/v0.11.3/sha256sum.txt
+  "0.11.3":
+    # https://github.com/ollama/ollama/releases/download/v0.11.3/ollama-linux-amd64.tgz
+    linux-amd64: sha256:004bc7d1ec8fc83403d6d2b5e55c346b127f350f1d38487d4d722a7fdff9f60d
+    # https://github.com/ollama/ollama/releases/download/v0.11.3/ollama-linux-arm64.tgz
+    linux-arm64: sha256:2a4ce5c92a2d2f3da6afcb219baf50530b4989e5d5ee5c4768c80303a3f679fa
+  # https://github.com/ollama/ollama/releases/download/v0.11.4/sha256sum.txt
+  "0.11.4":
+    # https://github.com/ollama/ollama/releases/download/v0.11.4/ollama-linux-amd64.tgz
+    linux-amd64: sha256:a388afb2ccf4e61a3d0de88f0d0600e9e1d67e56bbc9a011ee287f62780bee33
+    # https://github.com/ollama/ollama/releases/download/v0.11.4/ollama-linux-arm64.tgz
+    linux-arm64: sha256:f38a917b958fcc7e14d24126728cc7ac4d30391bccd6ddeb3e98cc93c7410c59
+  # https://github.com/ollama/ollama/releases/download/v0.11.5/sha256sum.txt
+  "0.11.5":
+    # https://github.com/ollama/ollama/releases/download/v0.11.5/ollama-linux-amd64.tgz
+    linux-amd64: sha256:bc9aa3bdae0c10abb61984d3cf9e9fb2ff16a49b190df55c120a3f60345070ea
+    # https://github.com/ollama/ollama/releases/download/v0.11.5/ollama-linux-arm64.tgz
+    linux-arm64: sha256:618ca2a189ec6e3aca5886a22c25eb7e1acf9ead22d4d2e1549683bf1fef1033
+  # https://github.com/ollama/ollama/releases/download/v0.11.6/sha256sum.txt
+  "0.11.6":
+    # https://github.com/ollama/ollama/releases/download/v0.11.6/ollama-linux-amd64.tgz
+    linux-amd64: sha256:fa9608a428c7d6bd46fce69f7016242feedf60fba1a57d3ee767257b071216f6
+    # https://github.com/ollama/ollama/releases/download/v0.11.6/ollama-linux-arm64.tgz
+    linux-arm64: sha256:1ab8b669d844b400a50de1fdfed0798c0e868eddb8e788e948c13fe02f64c5d8
+  # https://github.com/ollama/ollama/releases/download/v0.11.7/sha256sum.txt
+  "0.11.7":
+    # https://github.com/ollama/ollama/releases/download/v0.11.7/ollama-linux-amd64.tgz
+    linux-amd64: sha256:0262785952d911c18405c82b510faf1ae68fee85259615470a5b16a362ae98a2
+    # https://github.com/ollama/ollama/releases/download/v0.11.7/ollama-linux-arm64.tgz
+    linux-arm64: sha256:8768a4158d7325db71f48f2bc2fda63541e55736d82b508eb1a4a809122782e1
+  # https://github.com/ollama/ollama/releases/download/v0.11.8/sha256sum.txt
+  "0.11.8":
+    # https://github.com/ollama/ollama/releases/download/v0.11.8/ollama-linux-amd64.tgz
+    linux-amd64: sha256:73b7bff63cb792b7020fee9b918cb53fd9a7cc012ef188ad5cdc48b31ed52198
+    # https://github.com/ollama/ollama/releases/download/v0.11.8/ollama-linux-arm64.tgz
+    linux-arm64: sha256:238616870881c44ccdcb0d893aa2da1bd81a1806e68ef697bc6880a93db6baa7
+  # https://github.com/ollama/ollama/releases/download/v0.11.9/sha256sum.txt
+  "0.11.9":
+    # https://github.com/ollama/ollama/releases/download/v0.11.9/ollama-linux-amd64.tgz
+    linux-amd64: sha256:1929cba747af5c13421bd1986b48734e2f742060bbe69bbad929aa942d3c3ab1
+    # https://github.com/ollama/ollama/releases/download/v0.11.9/ollama-linux-arm64.tgz
+    linux-arm64: sha256:fe826408d70fc674699723bba91a2f83a34b244a73742243e21f2332694d98d4
+  # https://github.com/ollama/ollama/releases/download/v0.11.10/sha256sum.txt
+  "0.11.10":
+    # https://github.com/ollama/ollama/releases/download/v0.11.10/ollama-linux-amd64.tgz
+    linux-amd64: sha256:da2be71e972752e3099ef1d1226050d2b3d1ce79a4fec3bdb6edc70a7601e060
+    # https://github.com/ollama/ollama/releases/download/v0.11.10/ollama-linux-arm64.tgz
+    linux-arm64: sha256:8d7dc33c862c6d8600bcbd98e087cdc78f39fe5c5f6e4439924d0188a1e9a85d
+  # https://github.com/ollama/ollama/releases/download/v0.11.11/sha256sum.txt
+  "0.11.11":
+    # https://github.com/ollama/ollama/releases/download/v0.11.11/ollama-linux-amd64.tgz
+    linux-amd64: sha256:1d2988c29346e6af0216c847db20f7df7794412ae56674eeec21e0917113843f
+    # https://github.com/ollama/ollama/releases/download/v0.11.11/ollama-linux-arm64.tgz
+    linux-arm64: sha256:3d6484b25750855a5fabeb9d36bae4f14cb9f3bff5c4081bc27f8d025a84df1c
+  # https://github.com/ollama/ollama/releases/download/v0.12.0/sha256sum.txt
+  "0.12.0":
+    # https://github.com/ollama/ollama/releases/download/v0.12.0/ollama-linux-amd64.tgz
+    linux-amd64: sha256:5c6ea489179d534e2f841956fb62af1c97376bde0b759eb109e4911b82c88301
+    # https://github.com/ollama/ollama/releases/download/v0.12.0/ollama-linux-arm64.tgz
+    linux-arm64: sha256:0c0bd541f423d4d934ea0e05c447144ae966bf7a46ac82b75840054c1ce9495f
+  # https://github.com/ollama/ollama/releases/download/v0.12.1/sha256sum.txt
+  "0.12.1":
+    # https://github.com/ollama/ollama/releases/download/v0.12.1/ollama-linux-amd64.tgz
+    linux-amd64: sha256:8bc3ace69113e4b4ddc49177a339772daf35af266d2a9294944e26b9efc6c0a9
+    # https://github.com/ollama/ollama/releases/download/v0.12.1/ollama-linux-arm64.tgz
+    linux-arm64: sha256:90a359b7721b84a76a48d86304858de43a46160a3906f8632622453788a5cc54
+  # https://github.com/ollama/ollama/releases/download/v0.12.2/sha256sum.txt
+  "0.12.2":
+    # https://github.com/ollama/ollama/releases/download/v0.12.2/ollama-linux-amd64.tgz
+    linux-amd64: sha256:abe5d1a64f813445a184bc44885bec08f8d6d8a95076ffb80ef96ed23124b64b
+    # https://github.com/ollama/ollama/releases/download/v0.12.2/ollama-linux-arm64.tgz
+    linux-arm64: sha256:45e089fd5fb31fd08d2be151bb537d3047a2be1f3437b41f35372fc5a7e5981c
+  # https://github.com/ollama/ollama/releases/download/v0.12.3/sha256sum.txt
+  "0.12.3":
+    # https://github.com/ollama/ollama/releases/download/v0.12.3/ollama-linux-amd64.tgz
+    linux-amd64: sha256:649ac33e3e22304f650207e4f6379dbc2c2397d840593caf5bba6605c2886229
+    # https://github.com/ollama/ollama/releases/download/v0.12.3/ollama-linux-arm64.tgz
+    linux-arm64: sha256:d0cc8332edd26778b4c05e1b1d1b5d09f5f5611ad6a939fac4a9da6b5cb81d90
