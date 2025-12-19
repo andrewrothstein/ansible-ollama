@@ -1,7 +1,7 @@
 ---
 # vars file for ollama
-ollama_os: '{{ ansible_system | lower }}'
-ollama_arch: '{{ ollama_arch_map[ansible_architecture] }}'
+ollama_os: '{{ ansible_facts["system"] | lower }}'
+ollama_arch: '{{ ollama_arch_map[ansible_facts["architecture"]] }}'
 ollama_platform: '{{ ollama_os }}-{{ ollama_arch }}'
 ollama_url: '{{ ollama_mirror }}/v{{ ollama_ver }}/ollama-{{ ollama_platform }}.tgz'
 ollama_tmp_tgz: '{{ ollama_tmp_dir | default("/tmp") }}/ollama-{{ ollama_ver }}-{{ ollama_platform }}.tgz'
