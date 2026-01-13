@@ -4,8 +4,12 @@ ollama_os: '{{ ansible_facts["system"] | lower }}'
 ollama_arch: '{{ ollama_arch_map[ansible_facts["architecture"]] }}'
 ollama_platform: '{{ ollama_os }}-{{ ollama_arch }}'
 # Determine archive extension: .tgz for versions <= 0.13.5, .tar.zst for versions >= 0.14.0
+# Using string comparison to avoid version_compare filter dependency
 ollama_archive_ext: >-
-  {%- if ollama_ver | version_compare('0.14.0', '>=') -%}
+  {%- set ver_parts = ollama_ver.split('.') -%}
+  {%- set major = ver_parts[0] | int -%}
+  {%- set minor = ver_parts[1] | int -%}
+  {%- if major > 0 or (major == 0 and minor >= 14) -%}
     tar.zst
   {%- else -%}
     tgz
