@@ -17,6 +17,21 @@
 - name: Downloading and installing ollama
   when: not ollama_binary.stat.exists
   block:
+    - name: Installing andrewrothstein.unarchivedeps
+      ansible.builtin.include_role:
+        name: andrewrothstein.unarchivedeps
+    - name: Ensure required packages for archive extraction are installed
+      become: true
+      become_user: root
+      ansible.builtin.package:
+        # tar: Required for extracting tar archives (.tgz and .tar.zst)
+        # gzip: Required for .tgz files (versions <= 0.13.5)
+        # zstd: Required for .tar.zst files (versions >= 0.14.0)
+        name:
+          - tar
+          - gzip
+          - zstd
+        state: present
     - name: Downloading {{ ollama_url }} to {{ ollama_tmp_tgz }}
       become: true
       become_user: root
@@ -32,9 +47,6 @@
         path: '{{ ollama_install_dir }}'
         state: directory
         mode: '755'
-    - name: Installing andrewrothstein.unarchivedeps
-      ansible.builtin.include_role:
-        name: andrewrothstein.unarchivedeps
     - name: Unarchiving {{ ollama_tmp_tgz }} to {{ ollama_install_dir }}
       become: true
       become_user: root
