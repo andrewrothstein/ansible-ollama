@@ -3,8 +3,9 @@
 ollama_os: '{{ ansible_facts["system"] | lower }}'
 ollama_arch: '{{ ollama_arch_map[ansible_facts["architecture"]] }}'
 ollama_platform: '{{ ollama_os }}-{{ ollama_arch }}'
-ollama_url: '{{ ollama_mirror }}/v{{ ollama_ver }}/ollama-{{ ollama_platform }}.tgz'
-ollama_tmp_tgz: '{{ ollama_tmp_dir | default("/tmp") }}/ollama-{{ ollama_ver }}-{{ ollama_platform }}.tgz'
+ollama_archive_ext: "{{ 'tar.zst' if ollama_ver is version('0.14.0', '>=') else 'tgz' }}"
+ollama_url: '{{ ollama_mirror }}/v{{ ollama_ver }}/ollama-{{ ollama_platform }}.{{ ollama_archive_ext }}'
+ollama_tmp_archive: '{{ ollama_tmp_dir | default("/tmp") }}/ollama-{{ ollama_ver }}-{{ ollama_platform }}.{{ ollama_archive_ext }}'
 ollama_checksum: '{{ ollama_checksums[ollama_ver][ollama_platform] }}'
 ollama_install_dir: '{{ ollama_parent_install_dir }}/ollama-{{ ollama_ver }}-{{ ollama_platform }}'
 ollama_exe: '{{ ollama_install_dir }}/bin/ollama'

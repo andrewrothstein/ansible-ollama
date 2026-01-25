@@ -10,7 +10,7 @@ dl()
     local lchecksums=$2
     local os=$3
     local arch=$4
-    local archive_type=${5:-tgz}
+    local archive_type=${5:-tar.zst}
     local platform="${os}-${arch}"
     local file="${APP}-${platform}.${archive_type}"
 
@@ -37,4 +37,4 @@ dl_ver () {
     dl $ver $lchecksums linux arm64
 }
 
-dl_ver ${1:-0.13.5}
+dl_ver ${1:-0.14.3}
