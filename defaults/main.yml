@@ -1,6 +1,6 @@
 ---
 # defaults file for ollama
-ollama_ver: 0.15.6
+ollama_ver: 0.17.4
 ollama_mirror: https://github.com/ollama/ollama/releases/download
 ollama_arch_map:
   aarch64: arm64
@@ -463,3 +463,51 @@ ollama_checksums:
     linux-amd64: sha256:273a4ee80c7837c586922b0814350acbd893014e1be8f139503b5178f0111453
     # https://github.com/ollama/ollama/releases/download/v0.15.6/ollama-linux-arm64.tar.zst
     linux-arm64: sha256:3deaeccfab078e051956d9f699e30a29b7c1227813b3e690faecec710cb09d12
+  # https://github.com/ollama/ollama/releases/download/v0.16.0/sha256sum.txt
+  '0.16.0':
+    # https://github.com/ollama/ollama/releases/download/v0.16.0/ollama-linux-amd64.tar.zst
+    linux-amd64: sha256:d67110bb2f7f7106e046f27f74648d5c643078c7e6c418a53533c83f564998e2
+    # https://github.com/ollama/ollama/releases/download/v0.16.0/ollama-linux-arm64.tar.zst
+    linux-arm64: sha256:5262d2874a79351d73a08a0455efdcc475b3ca7095c8d64922aaf335097ca601
+  # https://github.com/ollama/ollama/releases/download/v0.16.1/sha256sum.txt
+  '0.16.1':
+    # https://github.com/ollama/ollama/releases/download/v0.16.1/ollama-linux-amd64.tar.zst
+    linux-amd64: sha256:7be6887b1d3102ee198f83806a8b91dd7398a937a575a36b053a9c9bcc7cfc78
+    # https://github.com/ollama/ollama/releases/download/v0.16.1/ollama-linux-arm64.tar.zst
+    linux-arm64: sha256:b1be867b6256cd90e080e58cc22822249194daf1ebfd29f3e51f1104b38ce79d
+  # https://github.com/ollama/ollama/releases/download/v0.16.2/sha256sum.txt
+  '0.16.2':
+    # https://github.com/ollama/ollama/releases/download/v0.16.2/ollama-linux-amd64.tar.zst
+    linux-amd64: sha256:925126607cba24eae4cbbc5cfd46c3267273fe42f1472422c112d68b20f223be
+    # https://github.com/ollama/ollama/releases/download/v0.16.2/ollama-linux-arm64.tar.zst
+    linux-arm64: sha256:60d9d5b7d2fedc3d898c85b0dd1f11293aa0a49c5799236b1e1daa80d27b1912
+  # https://github.com/ollama/ollama/releases/download/v0.17.0/sha256sum.txt
+  '0.17.0':
+    # https://github.com/ollama/ollama/releases/download/v0.17.0/ollama-linux-amd64.tar.zst
+    linux-amd64: sha256:530fe6a4d035254f6b3dd112e2bb56592552d41881d8a932b4906681fc4c5828
+    # https://github.com/ollama/ollama/releases/download/v0.17.0/ollama-linux-arm64.tar.zst
+    linux-arm64: sha256:298a532d7fbff2c3da4e57a89731008015b2b45c0bd29f948e1e848689611824
+  # https://github.com/ollama/ollama/releases/download/v0.17.1/sha256sum.txt
+  '0.17.1':
+    # https://github.com/ollama/ollama/releases/download/v0.17.1/ollama-linux-amd64.tar.zst
+    linux-amd64: sha256:3a7bac157ef671bbd6be57cb9086b3280ffce302a6b83cae144ce9e4133e3db6
+    # https://github.com/ollama/ollama/releases/download/v0.17.1/ollama-linux-arm64.tar.zst
+    linux-arm64: sha256:6becf565f6d3d25a60dbb3c45f95cfb2216762d1de420f39adf3c7d8280face6
+  # https://github.com/ollama/ollama/releases/download/v0.17.2/sha256sum.txt
+  '0.17.2':
+    # https://github.com/ollama/ollama/releases/download/v0.17.2/ollama-linux-amd64.tar.zst
+    linux-amd64: sha256:0dea83fc3addcc522f93952400c1de8bbb92dc1e25dbd4d996cfcb018a0294ff
+    # https://github.com/ollama/ollama/releases/download/v0.17.2/ollama-linux-arm64.tar.zst
+    linux-arm64: sha256:fa842ac0209d412978b7368109ff5ad9146f616f9dfcb9879ff1195603af4734
+  # https://github.com/ollama/ollama/releases/download/v0.17.3/sha256sum.txt
+  '0.17.3':
+    # https://github.com/ollama/ollama/releases/download/v0.17.3/ollama-linux-amd64.tar.zst
+    linux-amd64: sha256:f97c90ddfb118676cd11bb1bd5912b64fc53a7f6d11136d02e93a54a6c13fae2
+    # https://github.com/ollama/ollama/releases/download/v0.17.3/ollama-linux-arm64.tar.zst
+    linux-arm64: sha256:e96afb9fdea7dd604739c3d5e5d6fe1dbb40164479a0017211c7b4fcd2fdd110
+  # https://github.com/ollama/ollama/releases/download/v0.17.4/sha256sum.txt
+  '0.17.4':
+    # https://github.com/ollama/ollama/releases/download/v0.17.4/ollama-linux-amd64.tar.zst
+    linux-amd64: sha256:810723a87daeef4591b4101ba1a48a8f381e868a2ec38395b64100dbed578878
+    # https://github.com/ollama/ollama/releases/download/v0.17.4/ollama-linux-arm64.tar.zst
+    linux-arm64: sha256:8679197b0c8d6b80a71361fb2c456b1d7ea3ee48a764596b3a7001ffbe3a2da8
