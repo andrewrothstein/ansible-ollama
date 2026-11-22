@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 set -e
-DIR=~/Downloads
+DIR=$(mktemp -d)
+trap 'rm -rf "$DIR"' EXIT
 MIRROR=https://github.com/ollama/ollama/releases/download
 APP=ollama
 
@@ -17,8 +18,15 @@ dl()
     # https://github.com/ollama/ollama/releases/download/v0.3.8/ollama-linux-amd64.tgz
     local url="${MIRROR}/v${ver}/${file}"
 
-    printf "    # %s\n" $url
-    printf "    %s: sha256:%s\n" $platform $(egrep -e "$file" $lchecksums | awk '{print $1}')
+    local sum
+    sum=$(awk -v f="$file" '{n = $2; sub(/^\.\//, "", n)} n == f || n == "*" f {print $1}' "$lchecksums")
+    if ! printf '%s' "$sum" | grep -Eq '^[0-9a-f]{64}$'
+    then
+        echo "bad or missing checksum for $url: '$sum'" >&2
+        exit 1
+    fi
+    printf "    # %s\n" "$url"
+    printf "    %s: sha256:%s\n" "$platform" "$sum"
 }
 
 dl_ver () {
@@ -26,10 +34,7 @@ dl_ver () {
     # https://github.com/ollama/ollama/releases/download/v0.1.41/sha256sum.txt
     local checksums_url="${MIRROR}/v${ver}/sha256sum.txt"
     local lchecksums=$DIR/${APP}-checksums-${ver}.txt
-    if [ ! -e $lchecksums ]
-    then
-        curl -sSLf -o $lchecksums $checksums_url
-    fi
+    curl -fsSL --proto '=https' --tlsv1.2 -o "$lchecksums" "$checksums_url"
 
     printf "  # %s\n" $checksums_url
     printf "  '%s':\n" $ver
@@ -37,4 +42,4 @@ dl_ver () {
     dl $ver $lchecksums linux arm64
 }
 
-dl_ver ${1:-0.32.14}
+dl_ver ${1:-0.40.17}
